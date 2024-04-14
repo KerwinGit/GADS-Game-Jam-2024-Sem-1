@@ -50,7 +50,7 @@ public class MenuScreen : MonoBehaviour
 
     public void LoadGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Main");
     }
 
     public void Back()

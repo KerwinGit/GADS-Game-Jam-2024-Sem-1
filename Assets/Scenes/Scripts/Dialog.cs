@@ -10,9 +10,11 @@ public class Dialog : MonoBehaviour
 {
 
     private Queue<string> lines;
+    public List<string> login;
     public GameObject character;
     public Text Charname;
     public Text description;
+    public int counter = 0;
     public bool end;
     private void Start()
     {
@@ -37,7 +39,7 @@ public class Dialog : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        Debug.Log("next dialogue");
+        //Debug.Log("next dialogue");
         if(lines.Count == 0)
         {
             EndDialogue();
@@ -46,11 +48,15 @@ public class Dialog : MonoBehaviour
         string sentence = lines.Dequeue();
        // Debug.Log(sentence);
        description.text = sentence;
+        login.Add(sentence);
+        counter += 1;
+        
     }
 
     void EndDialogue()
     {
         character.SetActive(false);
         end = true;
+        counter = 0;
     }
 }
