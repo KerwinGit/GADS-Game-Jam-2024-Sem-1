@@ -10,15 +10,19 @@ public class Dialog : MonoBehaviour
 {
 
     private Queue<string> lines;
+    public GameObject character;
     public Text Charname;
     public Text description;
+    public bool end;
     private void Start()
     {
         lines = new Queue<string>();
+        end = false;
     }
 
     public void StartDialogue(dialogue2 dialogue)
     {
+       // character.SetActive(true); 
         //Debug.Log("working");
         Charname.text = dialogue.name;
         lines.Clear();
@@ -33,6 +37,7 @@ public class Dialog : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        Debug.Log("next dialogue");
         if(lines.Count == 0)
         {
             EndDialogue();
@@ -45,6 +50,7 @@ public class Dialog : MonoBehaviour
 
     void EndDialogue()
     {
-
+        character.SetActive(false);
+        end = true;
     }
 }
