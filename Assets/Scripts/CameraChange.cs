@@ -6,13 +6,17 @@ using UnityEngine;
 public class CameraChange : MonoBehaviour
 {
     // Start is called before the first frame update
-    string movement = "main";
+    public string movement;
     public float speed = 10f;
     public float rotationSpeed = -0.5f;
+    public string confirmUI;
     //public GameDirection boolean;
     public Vector3 LeftPos = new Vector3(0, 0, 0);
     public Vector3 LeftRotation = new Vector3(0, 0, 0);
-    private Vector3 RightPos = new Vector3(0, 0, 0);
+    public Vector3 BacktoMain = new Vector3(0, 0, 0);
+    public Vector3 BacktoMainRotation = new Vector3(0, 0, 0);
+    public Vector3 BackToMain2 = new Vector3(0, 0, 0);
+    public Vector3 RightPos = new Vector3(0, 0, 0);
     // Update is called once per frame
     void Update()
     {
@@ -29,21 +33,35 @@ public class CameraChange : MonoBehaviour
             if (transform.position != LeftPos && movement == "left")
             {
                 transform.position = Vector3.MoveTowards(transform.position, LeftPos, speed * Time.deltaTime);
-                transform.eulerAngles = transform.eulerAngles + LeftRotation;
-                transform.eulerAngles += LeftRotation * rotationSpeed;
+                transform.eulerAngles = LeftRotation;
+               // transform.eulerAngles += LeftRotation * rotationSpeed;
 
 
             }
-        
-            else
+
+        if (transform.position != BacktoMain && movement == "main")
         {
+            transform.position = Vector3.MoveTowards(transform.position, BacktoMain, speed * Time.deltaTime);
+            transform.eulerAngles =  BacktoMainRotation;
+            //transform.eulerAngles += BacktoMainRotation * rotationSpeed;
+
 
         }
-       
 
-        
+        if (transform.position != RightPos && movement == "right")
+        {
+            transform.position = Vector3.MoveTowards(transform.position, RightPos, speed * Time.deltaTime);
+        }
 
-        EvidenceDisplay(); 
+        if (transform.position != BackToMain2 && movement == "main2")
+        {
+            transform.position = Vector3.MoveTowards(transform.position, BackToMain2, speed * Time.deltaTime);
+        }
+
+
+
+
+        // EvidenceDisplay(); 
     }
 
     public string EvidenceDisplay()
@@ -52,12 +70,23 @@ public class CameraChange : MonoBehaviour
         return movement;
     }
 
-    public void SuspectDisplay()
+    public string MainCamera()
     {
-        if (transform.position != RightPos)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, LeftPos, speed * Time.deltaTime);
+        movement = "main";
+        
+        return movement;
 
-        }
+    }
+
+    public string SuspectDisplay()
+    {
+        movement = "right";
+        return movement;
+    }
+
+    public string MainCamera2()
+    {
+        movement = "main2";
+        return movement;
     }
 }

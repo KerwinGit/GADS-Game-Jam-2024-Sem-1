@@ -13,6 +13,7 @@ public class CameraMovement : MonoBehaviour
     float count = 0.0f;
     int timer = 0;
     public bool switching;
+    public bool UiSwitching;
 
     // Update is called once per frame
     void Update()
@@ -61,6 +62,7 @@ public class CameraMovement : MonoBehaviour
         else
         {
             switching = true;
+            UiSwitching = true;
             
         }
     }
