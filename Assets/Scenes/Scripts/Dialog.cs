@@ -13,6 +13,8 @@ public class Dialog : MonoBehaviour
     public List<string> login;
     public GameObject character;
     public Text Charname;
+    public string nameDisplay;
+    string colon = ":";
     public Text description;
     public int counter = 0;
     public bool end;
@@ -27,6 +29,7 @@ public class Dialog : MonoBehaviour
        // character.SetActive(true); 
         //Debug.Log("working");
         Charname.text = dialogue.name;
+        nameDisplay = dialogue.name + colon;
         lines.Clear();
         
         foreach (string sentence in dialogue.sentences)
