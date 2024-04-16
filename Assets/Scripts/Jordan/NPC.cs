@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public dialogue2 dialogue;
-    public GameManager appear;
+    //// Start is called before the first frame update
+    //public dialogue2 dialogue;
+    //public GameManager appear;
 
-    private void Start()
-    {
-        if (appear.heAppears is true)
-        {
-            triggerDiaglogue();
-        }
-    }
+    //private void Start()
+    //{
+    //    if (appear.heAppears is true)
+    //    {
+    //        triggerDiaglogue();
+    //    }
+    //}
 
-    public void triggerDiaglogue()
-    {
-        FindObjectOfType<Dialog>().StartDialogue(dialogue);
-    }
+    //public void triggerDiaglogue()
+    //{
+    //    FindObjectOfType<Dialog>().StartDialogue(dialogue);
+    //}
 }
