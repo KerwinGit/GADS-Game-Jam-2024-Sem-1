@@ -65,6 +65,10 @@ public class Journal : MonoBehaviour
         {
             guiltyButton.interactable = false;
             innocentButton.interactable = false;
-        }
+        }        
+    }
+    public void CloseJournal()
+    {
+        this.gameObject.SetActive(false);
     }
 }
