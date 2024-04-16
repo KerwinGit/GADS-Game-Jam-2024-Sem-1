@@ -28,6 +28,8 @@ public class TabCollection : MonoBehaviour
     public void OnTabEntered(TabButton tab)
     {
         ResetTabs();
+
+        if (selectedTab == null || tab != selectedTab)
         tab.bgImage.sprite = hovered;
     }
 
@@ -60,7 +62,7 @@ public class TabCollection : MonoBehaviour
     {
         foreach(TabButton tab in tabs)
         {
-            if(tab == selectedTab) { continue; }
+            if(selectedTab != null && tab == selectedTab) { continue; }
             tab.bgImage.sprite = idle;
         }
     }
