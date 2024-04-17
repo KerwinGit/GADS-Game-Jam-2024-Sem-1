@@ -396,7 +396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7872095569160842142, guid: 6bb4bfd7aa8ef964a82ca97cd5d7a493, type: 3}
       propertyPath: m_text
-      value: Attempting to remove him from curretn position
+      value: Attempting to remove him from current position
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

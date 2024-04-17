@@ -825,7 +825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7872095569160842142, guid: 6bb4bfd7aa8ef964a82ca97cd5d7a493, type: 3}
       propertyPath: m_text
-      value: Water Damges on Fernando
+      value: Water Damages on Fernando
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2602,7 +2602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4749309581849372427, guid: 3a1a73590fec92e43803e1729d3c04da, type: 3}
       propertyPath: dialogueDataList.Array.data[3].speech
-      value: Your Honor, I would do no such thing. The victim slipped off a bannana
+      value: Your Honor, I would do no such thing. The victim slipped off a banana
         peel before he got home. there is no proof that I caused the injury on his
         head
       objectReference: {fileID: 0}
@@ -2613,17 +2613,17 @@ PrefabInstance:
     - target: {fileID: 4749309581849372427, guid: 3a1a73590fec92e43803e1729d3c04da, type: 3}
       propertyPath: dialogueDataList.Array.data[5].speech
       value: Mr Fernando, what do you have to say about the bread crumbs that were
-        layed next to the murder victim?
+        lying next to the murder victim?
       objectReference: {fileID: 0}
     - target: {fileID: 4749309581849372427, guid: 3a1a73590fec92e43803e1729d3c04da, type: 3}
       propertyPath: dialogueDataList.Array.data[6].speech
-      value: Your Honor, It was the mouse's crumbs. The mosue was trying to steal
-        some crumbs next to me and bumped me into the sink with my chord intact.
-        He murdered the victim!!!
+      value: Your Honor, It was the mouse's crumbs. The mouse was trying to steal
+        some crumbs next to me and bumped me into the sink with my cord intact. He
+        murdered the victim!!!
       objectReference: {fileID: 0}
     - target: {fileID: 4749309581849372427, guid: 3a1a73590fec92e43803e1729d3c04da, type: 3}
       propertyPath: dialogueDataList.Array.data[7].speech
-      value: Thank you, Mr Ferando. We will review the evidence and claims you have
+      value: Thank you, Mr Fernando. We will review the evidence and claims you have
         provided.
       objectReference: {fileID: 0}
     - target: {fileID: 4749309581849372427, guid: 3a1a73590fec92e43803e1729d3c04da, type: 3}
@@ -2633,7 +2633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4749309581849372427, guid: 3a1a73590fec92e43803e1729d3c04da, type: 3}
       propertyPath: dialogueDataList.Array.data[9].speech
-      value: Your Honor, our Relationship was very cordial and there was no bad blood
+      value: Your Honor, our relationship was very cordial and there was no bad blood
         between us.
       objectReference: {fileID: 0}
     - target: {fileID: 4749309581849372427, guid: 3a1a73590fec92e43803e1729d3c04da, type: 3}
@@ -2647,7 +2647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4749309581849372427, guid: 3a1a73590fec92e43803e1729d3c04da, type: 3}
       propertyPath: dialogueDataList.Array.data[11].speech
-      value: Thank you for answering my Questions, We will decide the veridict in
+      value: Thank you for answering my Questions, We will decide the verdict in
         a moment.
       objectReference: {fileID: 0}
     - target: {fileID: 4749309581849372427, guid: 3a1a73590fec92e43803e1729d3c04da, type: 3}
@@ -8450,7 +8450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7872095569160842142, guid: 6bb4bfd7aa8ef964a82ca97cd5d7a493, type: 3}
       propertyPath: m_text
-      value: Piece of Fernando found on sight
+      value: Piece of Fernando found on site
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8868,7 +8868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7872095569160842142, guid: 6bb4bfd7aa8ef964a82ca97cd5d7a493, type: 3}
       propertyPath: m_text
-      value: Aggetated because of filthy envornment
+      value: Aggitated because of filthy environment
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
