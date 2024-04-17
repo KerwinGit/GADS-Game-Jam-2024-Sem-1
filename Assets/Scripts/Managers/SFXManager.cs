@@ -7,7 +7,7 @@ public class SFXManager : MonoBehaviour
 
     [SerializeField] private AudioSource aSource;
     [SerializeField] private List<AudioClip> clips;
-    [SerializeField] private HashMap<string, AudioClip> audioMap;
+    [SerializeField] private HashMap<string, AudioClip> audioHashMap;
     private void Awake()
     {
         if (Instance == null)
@@ -23,23 +23,16 @@ public class SFXManager : MonoBehaviour
 
         aSource = GetComponent<AudioSource>();
 
-        audioMap = new HashMap<string, AudioClip>();
+        audioHashMap = new HashMap<string, AudioClip>();
         foreach (AudioClip clip in clips)
         {
-            audioMap.Put(clip.name, clip);
+            audioHashMap.Put(clip.name, clip);
         }
 
     }
 
     public void PlayAudio(string name)
     {
-        if (audioMap.ContainsKey(name))
-        {
-            aSource.PlayOneShot(audioMap.Get(name));
-        }
-        else
-        {
-            Debug.Log("Sound " + name + " not found");
-        }
+        aSource.PlayOneShot(audioHashMap.Get(name));
     }
 }

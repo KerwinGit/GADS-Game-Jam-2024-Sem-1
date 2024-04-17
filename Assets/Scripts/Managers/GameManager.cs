@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Build.Content;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,7 +11,10 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(CrowdChatter());
+        if(SceneManager.GetActiveScene().buildIndex!=0)
+        {
+            StartCoroutine(CrowdChatter());
+        }
     }
 
     public void ShowVictory()
@@ -25,22 +29,22 @@ public class GameManager : MonoBehaviour
 
     public void RestartCase1()
     {
-        SceneManager.LoadSceneAsync("Case1Court");
+        SceneManager.LoadSceneAsync(1);
     }
     
     public void RestartCase2()
     {
-        SceneManager.LoadSceneAsync("Case2Court");
+        SceneManager.LoadSceneAsync(2);
     }
 
     public void NextLevel()
     {
-        SceneManager.LoadSceneAsync("Case2Court");
+        SceneManager.LoadSceneAsync(2);
     }
     
     public void onMainMenuClick()
     {
-        SceneManager.LoadSceneAsync("MainMenu");
+        SceneManager.LoadSceneAsync(0);
     }
 
     private IEnumerator CrowdChatter()
@@ -48,5 +52,24 @@ public class GameManager : MonoBehaviour
         SFXManager.Instance.PlayAudio("crowd");
         yield return new WaitForSeconds(1);
         SFXManager.Instance.PlayAudio("gavel");
+        StopCoroutine(CrowdChatter());
+    }
+
+    public void playGasp()
+    {
+        SFXManager.Instance.PlayAudio("gasp");
+    }
+    public void playGavel()
+    {
+        SFXManager.Instance.PlayAudio("gavel");
+    }
+    public void playPage()
+    {
+        SFXManager.Instance.PlayAudio("page");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
