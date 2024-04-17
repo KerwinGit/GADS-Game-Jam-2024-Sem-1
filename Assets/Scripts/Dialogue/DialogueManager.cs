@@ -22,6 +22,10 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Button nextButton;
     [SerializeField] private Button backButton;
 
+    [SerializeField] private TMP_Text log1;
+    [SerializeField] private TMP_Text log2;
+    [SerializeField] private TMP_Text log3;
+
     [SerializeField] private GameObject defaultIcon;
     [SerializeField] private GameObject exclaimIcon;
     [SerializeField] private GameObject questionIcon;
@@ -145,12 +149,15 @@ public class DialogueManager : MonoBehaviour
         {
             case 2:
                 option1Button.interactable = false;
+                log1.enabled = true;
                 break;
             case 5:
                 option2Button.interactable = false;
+                log2.enabled = true;
                 break;
             case 8:
                 option3Button.interactable = false;
+                log3.enabled = true;
                 break;
         }
 
