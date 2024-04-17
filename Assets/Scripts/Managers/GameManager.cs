@@ -7,7 +7,12 @@ public class GameManager : MonoBehaviour
 {
     public GameObject victoryScreen;
     public GameObject defeatScreen;
-    
+
+    private void Start()
+    {
+        StartCoroutine(CrowdChatter());
+    }
+
     public void ShowVictory()
     {
         victoryScreen.SetActive(true);
@@ -36,5 +41,12 @@ public class GameManager : MonoBehaviour
     public void onMainMenuClick()
     {
         SceneManager.LoadSceneAsync("MainMenu");
+    }
+
+    private IEnumerator CrowdChatter()
+    {
+        SFXManager.Instance.PlayAudio("crowd");
+        yield return new WaitForSeconds(1);
+        SFXManager.Instance.PlayAudio("gavel");
     }
 }
