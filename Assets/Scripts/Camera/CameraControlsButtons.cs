@@ -11,7 +11,7 @@ public class CameraControlsButtons : MonoBehaviour
 
     private void Start()
     {
-        onMainClick();
+        StartCoroutine(startCamera());
     }
 
     public void onMainClick()
@@ -44,6 +44,13 @@ public class CameraControlsButtons : MonoBehaviour
         mainCam.SetActive(false);
         evidenceCam.SetActive(false);
         holoCam.SetActive(false);
+    }
+
+    private IEnumerator startCamera()
+    {
+        evidenceCam.SetActive(true);
+        yield return new WaitForSeconds(1);
+        onMainClick();
     }
 
 }

@@ -33,12 +33,12 @@ public class MenuScreen : MonoBehaviour
 
     public void LoadLevel1()
     {
-        SceneManager.LoadScene("Case1Court");
+        SceneManager.LoadSceneAsync("Case1Court");
     }
 
     public void LoadLevel2()
     {
-        SceneManager.LoadScene("Case2Court");
+        SceneManager.LoadSceneAsync("Case2Court");
     }
 
     // public void LoadLevel3()
