@@ -1271,6 +1271,9 @@ MonoBehaviour:
   option3Button: {fileID: 0}
   nextButton: {fileID: 0}
   backButton: {fileID: 0}
+  log1: {fileID: 0}
+  log2: {fileID: 0}
+  log3: {fileID: 0}
   defaultIcon: {fileID: 0}
   exclaimIcon: {fileID: 0}
   questionIcon: {fileID: 0}
@@ -1976,7 +1979,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 62.5, y: -47.5}
+  m_AnchoredPosition: {x: 32, y: -115}
   m_SizeDelta: {x: -125, y: -95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &533525921905008432
@@ -2182,7 +2185,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -45}
+  m_AnchoredPosition: {x: 200, y: -43}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9122869172022304712
