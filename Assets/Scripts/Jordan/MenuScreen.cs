@@ -7,41 +7,50 @@ using UnityEngine.SceneManagement;
 
 public class MenuScreen : MonoBehaviour
 {
-    public GameObject StartPanel;
-    public GameObject LevelSelectPanel;
+    public GameObject startPanel;
+    public GameObject levelSelectPanel;
+    public GameObject howToPlayPanel;
 
     // Start is called before the first frame update
     void Start()
     {
-        LevelSelectPanel.SetActive(false);
-        StartPanel.SetActive(true);
+        levelSelectPanel.SetActive(false);
+        startPanel.SetActive(true);
+        howToPlayPanel.SetActive(false);
     }
 
     public void PlayClick()
     {
-        StartPanel.SetActive(false);
-        LevelSelectPanel.SetActive(true);
+        startPanel.SetActive(false);
+        levelSelectPanel.SetActive(true);
+    }
+
+    public void HowToPlayClick()
+    {
+        howToPlayPanel.SetActive(true);
+        startPanel.SetActive(false);
     }
 
     public void LoadLevel1()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Case1Court");
     }
 
     public void LoadLevel2()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Case2Court");
     }
 
-    public void LoadLevel3()
-    {
-        SceneManager.LoadScene(3);
-    }
+    // public void LoadLevel3()
+    // {
+    //     SceneManager.LoadScene(3);
+    // }
 
     public void Back()
     {
-        StartPanel.SetActive(true);
-        LevelSelectPanel.SetActive(false);
+        startPanel.SetActive(true);
+        levelSelectPanel.SetActive(false);
+        howToPlayPanel.SetActive(false);
     }
 
     public void Quit()
