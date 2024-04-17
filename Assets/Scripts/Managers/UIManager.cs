@@ -9,35 +9,64 @@ public class UIManager : MonoBehaviour
     public GameObject journalCanvas;
     public GameObject holoCanvas;
 
+    private void Start()
+    {
+        genCanvasActive();
+    }
+
     public void genCanvasActive()
     {
-        genCanvas.SetActive(true);
-        dialogueCanvas.enabled = false;
-        journalCanvas.SetActive(false);
-        holoCanvas.SetActive(false);
+        StartCoroutine(generalActive());
     }
 
     public void dialogueCanvasActive()
     {
-        genCanvas.SetActive(false);
-        dialogueCanvas.enabled = true;
-        journalCanvas.SetActive(false);
-        holoCanvas.SetActive(false);
+        StartCoroutine(dialogueActive());
     }
 
     public void journalCanvasActive()
     {
-        genCanvas.SetActive(false);
-        dialogueCanvas.enabled = false;
-        journalCanvas.SetActive(true);
-        holoCanvas.SetActive(false);
+        StartCoroutine(journalActive());
     }
 
     public void holoCanvasActive()
     {
+        StartCoroutine(holoActive());
+    }
+
+    private IEnumerator generalActive()
+    {        
+        dialogueCanvas.enabled = false;
+        journalCanvas.SetActive(false);
+        holoCanvas.SetActive(false);
+        yield return new WaitForSeconds(2);
+        genCanvas.SetActive(true);
+    }
+
+    private IEnumerator dialogueActive()
+    {
+        genCanvas.SetActive(false);
+        journalCanvas.SetActive(false);
+        holoCanvas.SetActive(false);
+        yield return new WaitForSeconds(2);
+        dialogueCanvas.enabled = true;
+    }
+
+    private IEnumerator journalActive()
+    {
+        genCanvas.SetActive(false);
+        dialogueCanvas.enabled = false;
+        holoCanvas.SetActive(false);
+        yield return new WaitForSeconds(2);
+        journalCanvas.SetActive(true);
+    }
+
+    private IEnumerator holoActive()
+    {
         genCanvas.SetActive(false);
         dialogueCanvas.enabled = false;
         journalCanvas.SetActive(false);
+        yield return new WaitForSeconds(2);
         holoCanvas.SetActive(true);
     }
 }

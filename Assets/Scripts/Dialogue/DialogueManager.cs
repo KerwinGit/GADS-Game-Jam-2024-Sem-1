@@ -99,7 +99,8 @@ public class DialogueManager : MonoBehaviour
 
     private void StopDialogue()
     {
-        throw new NotImplementedException();
+        currentDialogueIndex = 11;
+        nextButton.enabled = false;
     }
 
     private void DisplayEmotionIcon(dialogueData dialogue)
@@ -140,6 +141,19 @@ public class DialogueManager : MonoBehaviour
 
     public void SelectOption(int indexAnswer)
     {
+        switch(indexAnswer)
+        {
+            case 2:
+                option1Button.interactable = false;
+                break;
+            case 5:
+                option2Button.interactable = false;
+                break;
+            case 8:
+                option3Button.interactable = false;
+                break;
+        }
+
         DisableOptions();
 
         currentDialogueIndex = indexAnswer;
