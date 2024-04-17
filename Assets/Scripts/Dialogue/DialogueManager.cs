@@ -53,7 +53,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            nextButton.enabled = false
+            nextButton.enabled = false;
         }
     }
 
