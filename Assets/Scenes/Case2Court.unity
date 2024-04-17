@@ -651,7 +651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3637457449855950639, guid: 6bb4bfd7aa8ef964a82ca97cd5d7a493, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -138
+      value: -172
       objectReference: {fileID: 0}
     - target: {fileID: 3637457449855950639, guid: 6bb4bfd7aa8ef964a82ca97cd5d7a493, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -691,7 +691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7872095569160842142, guid: 6bb4bfd7aa8ef964a82ca97cd5d7a493, type: 3}
       propertyPath: m_text
-      value: Alibi consistency and reliabality
+      value: Water Damges on Fernando
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2375,7 +2375,7 @@ PrefabInstance:
     - target: {fileID: 4749309581849372427, guid: 3a1a73590fec92e43803e1729d3c04da, type: 3}
       propertyPath: dialogueDataList.Array.data[3].speech
       value: Your Honor, I would do no such thing. The victim slipped off a bannana
-        peel beofre he got home. there is no proof that  I caused the injury on his
+        peel before he got home. there is no proof that I caused the injury on his
         head
       objectReference: {fileID: 0}
     - target: {fileID: 4749309581849372427, guid: 3a1a73590fec92e43803e1729d3c04da, type: 3}
@@ -2415,7 +2415,7 @@ PrefabInstance:
     - target: {fileID: 4749309581849372427, guid: 3a1a73590fec92e43803e1729d3c04da, type: 3}
       propertyPath: dialogueDataList.Array.data[10].speech
       value: Even though he put a cold piece of Pizza into my Bread Rack, we were
-        in very good terms!.
+        on very good terms!
       objectReference: {fileID: 0}
     - target: {fileID: 4749309581849372427, guid: 3a1a73590fec92e43803e1729d3c04da, type: 3}
       propertyPath: dialogueDataList.Array.data[11].speech
@@ -4714,7 +4714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3637457449855950639, guid: 6bb4bfd7aa8ef964a82ca97cd5d7a493, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -83
+      value: -108
       objectReference: {fileID: 0}
     - target: {fileID: 3637457449855950639, guid: 6bb4bfd7aa8ef964a82ca97cd5d7a493, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4754,7 +4754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7872095569160842142, guid: 6bb4bfd7aa8ef964a82ca97cd5d7a493, type: 3}
       propertyPath: m_text
-      value: Witnesses Testimonies
+      value: Caused bump on owners head
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5443,17 +5443,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1980093762287615088, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
       propertyPath: m_text
-      value: Present at scene
+      value: Cheese present in Fernando
       objectReference: {fileID: 0}
     - target: {fileID: 3248669584686311908, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
       propertyPath: m_text
-      value: Dr Thomas Greene is discovered dead in his office, having been bludgeoned
-        to death. The primary suspect is his colleague, Emily Parker, who had a strained
-        relationship with him.
+      value: As its unsuspecting owner washed dishes, Fernando is accused of coming
+        to life, causing a surge of electricity through the water and tragically
+        killing the owner.
       objectReference: {fileID: 0}
     - target: {fileID: 3296751644960693908, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
       propertyPath: m_text
-      value: Motive to Kill Dr. Greene
+      value: Toast Crumbs found at crime
       objectReference: {fileID: 0}
     - target: {fileID: 3751708283703393098, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
       propertyPath: m_IsActive
@@ -5461,12 +5461,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3784194860079357228, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
       propertyPath: m_text
-      value: 'Log 2: Dr. Parker claims to have witnesses who can testify the lack
-        of motive and also documenting her whereabouts on the night of the murder.'
+      value: 'Log 2: Fernando claims the breadcrums came from the mouse in the house,
+        bumping him into the water while plugged in and blaming the mouse for the
+        crime'
       objectReference: {fileID: 0}
+    - target: {fileID: 3784194860079357228, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061819548563228790, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: ae699535994063e4cba4edd59fb84e5a, type: 3}
     - target: {fileID: 4187714050092780958, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
       propertyPath: m_text
-      value: Had access to murder weapon
+      value: Foot damaged after crime took place
       objectReference: {fileID: 0}
     - target: {fileID: 4208782034836845925, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
       propertyPath: m_IsActive
@@ -5482,23 +5491,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4917686393320212673, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 114
+      value: 107
       objectReference: {fileID: 0}
     - target: {fileID: 4960049709688460915, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
       propertyPath: m_text
       value: 'BIO
 
 
-        Name: Emily Parker
+        Name: Fernando
 
-        Age: 27
+        Age: 4
 
-        Height:
-        170cm
+        Height: 18cm
 
-        Weight: 62kg
+        Weight:
+        0.8kg
 
-        Occupation: Professor'
+        Occupation: Toaster'
       objectReference: {fileID: 0}
     - target: {fileID: 4960049709688460915, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
       propertyPath: m_margin.z
@@ -5518,8 +5527,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5997829053338640270, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
       propertyPath: m_text
-      value: 'Log 3: Dr. Parker can''t explain why her fingerprints are on the murder
-        weapon.'
+      value: 'Log 3: On good terms with home owner, but did complain about the owner
+        trying to toast a frozen pizza with them without asking for that information'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997829053338640270, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6921986049878887524, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
       propertyPath: m_IsActive
@@ -5535,7 +5548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7302633854348589359, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 61
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 8061185444850352916, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
       propertyPath: evidences.Array.size
@@ -5647,8 +5660,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9214297653679115315, guid: 6c1a1f39ed9e63147aa5990a126672af, type: 3}
       propertyPath: m_text
-      value: 'Log 1: Dr. Parker says it''s not unusual for her to visit Dr. Greene''s
-        office'
+      value: 'Log 1: Fernando claims owner got bruise from slipping on a banana peel
+        on their way home'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6169,7 +6182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7872095569160842142, guid: 6bb4bfd7aa8ef964a82ca97cd5d7a493, type: 3}
       propertyPath: m_text
-      value: DNA discovered at crime scene
+      value: Piece of Fernando found on sight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6394,7 +6407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3637457449855950639, guid: 6bb4bfd7aa8ef964a82ca97cd5d7a493, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -24
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 3637457449855950639, guid: 6bb4bfd7aa8ef964a82ca97cd5d7a493, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6434,7 +6447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7872095569160842142, guid: 6bb4bfd7aa8ef964a82ca97cd5d7a493, type: 3}
       propertyPath: m_text
-      value: Acquire financial benefits
+      value: Cause white outline on body
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6587,7 +6600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7872095569160842142, guid: 6bb4bfd7aa8ef964a82ca97cd5d7a493, type: 3}
       propertyPath: m_text
-      value: Attempting to remove him from curretn position
+      value: Aggetated because of filthy envornment
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
