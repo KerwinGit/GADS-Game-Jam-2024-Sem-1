@@ -2602,8 +2602,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4749309581849372427, guid: 3a1a73590fec92e43803e1729d3c04da, type: 3}
       propertyPath: dialogueDataList.Array.data[3].speech
-      value: Your Honor, I would do no such thing. The victim slipped off a banana
-        peel before he got home. there is no proof that I caused the injury on his
+      value: Your Honor, I would do no such thing. The victim slipped on a puddle
+        of water in the kitchen. there is no proof that I caused the injury on his
         head
       objectReference: {fileID: 0}
     - target: {fileID: 4749309581849372427, guid: 3a1a73590fec92e43803e1729d3c04da, type: 3}
