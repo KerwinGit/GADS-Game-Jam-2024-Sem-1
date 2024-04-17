@@ -51,6 +51,10 @@ public class DialogueManager : MonoBehaviour
                 StartCoroutine(TypeDialogue(nextDialogue));
             }
         }
+        else
+        {
+            nextButton.enabled = false
+        }
     }
 
     public void DialogueStart()
@@ -104,7 +108,6 @@ public class DialogueManager : MonoBehaviour
     private void StopDialogue()
     {
         currentDialogueIndex = 11;
-        nextButton.enabled = false;
     }
 
     private void DisplayEmotionIcon(dialogueData dialogue)
