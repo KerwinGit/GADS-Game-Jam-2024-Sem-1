@@ -79,7 +79,7 @@ public class DialogueManager : MonoBehaviour
 
         foreach (char letter in dialogue.speech)
         {
-            //SFXManager.Instance.PlayAudio("dialog");
+            SFXManager.Instance.PlayAudio("dialog");
             dialogueText.text += letter;
             yield return new WaitForSeconds(0.05f); // Add a slight delay for typing effect
         }
