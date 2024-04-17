@@ -8,7 +8,12 @@ public class CameraControlsButtons : MonoBehaviour
     public GameObject evidenceCam;
     public GameObject holoCam;
     public GameObject standCam;
-    
+
+    private void Start()
+    {
+        onMainClick();
+    }
+
     public void onMainClick()
     {
         mainCam.SetActive(true);
