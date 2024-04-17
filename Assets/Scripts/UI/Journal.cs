@@ -16,8 +16,6 @@ public class Journal : MonoBehaviour
 
     public Button innocentButton;
     public Button guiltyButton;
-    private bool canInnocent = false;
-    private bool canGuilty = false;
 
     private void Start()
     {
