@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: 5e12242058bb82e45a5c3cfae3a26548
   - enabled: 1
-    path: Assets/Scenes/DialogueRescriptTesting.unity
-    guid: 11b0c266e9b4c9349818c36be5247782
+    path: Assets/Scenes/Case1Court.unity
+    guid: c9f76acc985eb8c42b997e507181b23a
+  - enabled: 1
+    path: Assets/Scenes/Case2Court.unity
+    guid: 8edf6c16e17f84348952fefe5434cbf1
   m_configObjects: {}
